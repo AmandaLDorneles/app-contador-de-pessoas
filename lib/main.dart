@@ -30,12 +30,14 @@ class _HomePageState extends State<HomePage> {
     setState(() {
       count--;
     });
+    print(count);
   }
 
   void increment() {
     setState(() {
       count++;
     });
+    print(count);
   }
 
   bool get isEmpty => count == 0;
@@ -44,6 +46,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    print('Build');
     return Scaffold(
       backgroundColor: Colors.green,
       body: Container(
